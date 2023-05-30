@@ -26,4 +26,6 @@ start = time.time()
 layout.initBody(DUMMY_TASK_LIST)
 print('initBody', time.time() - start)
 
+layout.renderBody()
+
 partial(layout.render())

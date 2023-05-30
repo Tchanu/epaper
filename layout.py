@@ -31,6 +31,8 @@ class Layout:
 
         self.lbody = EPDLayout(resolution=bodyResolution, mode='L', layout=bodyLayout)
 
-    def render(self):
+    def renderBody(self):
         self.layout.update_contents({ 'body': self.lbody.concat() })
+
+    def render(self):
         return self.layout.concat()
